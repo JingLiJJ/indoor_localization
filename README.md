@@ -6,7 +6,7 @@ Location awareness is one of popular technologies in our lives. It plays an impo
 ### Wi-Fi fingerprinting
 Nowadays, Wi-Fi networks exist everywhere in public buildings, schools, shopping malls. Almost every mobile robot is equipped with a Wi-Fi adapter used to connect with the Internet. Wi-Fi adapter can obtain the observed service set identifier (SSID) and received signal strengths (RSS) for access points (APs). Wi-Fi fingerprinting is defined as a vector of a pair of a SSID and an RSS for an AP measured at a location. Then a position can be estimated by finding the closet match between RSS and the fingerprints of known locations in a database. The procedure of indoor localization using Wi-Fi printing is shown below.
 
-![](shot\procedure.PNG)
+![](shot\procedure.png)
 
 ## Project Objective
 
@@ -17,7 +17,7 @@ The core of this method is classification DNN with stacked autoencoders.
 
 ### Stacked Antoencoders (SAE)
 The objective of this part is to reduce feature dimensionality and take advantage of a large amount of gathered data. The basic structure of SAE is presented below. 
-![](shot\autoencoder.PNG)
+![](shot\autoencoder.png)
 
 The input of SAE are received signal strengths (RSS) for APs. The output of decoder are the reconstructed RSSs of inputs from reduced representation. In the middle, there are several symmetrical hidden layers (HL) in the encoder and decoder parts dividedly. The SAE is learned during unsupervised training and the goal is to train the pair encoder-decoder to achieve the same information at the output as input. For example, here we enter 520 RSS inputs and create 520 feature layers, the network could generate smaller layers, such as 64 layers, these layers have enough information to reconstruct 520 input data. It makes use of information redundancy to compress data sets.
 
