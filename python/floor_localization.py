@@ -227,7 +227,7 @@ if __name__ == "__main__":
         # # set all layers (i.e., SAE encoder) to non-trainable (weights will not be updated)
         # for layer in model.layers[:]:
         #     layer.trainable = False
-        
+
         # save the model for later use
         model.save(path_sae_model)
 
@@ -267,7 +267,7 @@ if __name__ == "__main__":
     ax1.set_xlabel('epoch')
     ax1.set_ylabel('accuracy')
     ax1.legend(['train', 'validation'], loc='lower right')
-    
+
     ax2.plot(history.history['loss'])
     ax2.plot(history.history['val_loss'])
     # ax2.title('model loss')
@@ -277,7 +277,7 @@ if __name__ == "__main__":
 
     plt.tight_layout()
     plt.show()
-    
+
     # evaluate the model
     elapsedTime = timer() - startTime
     print("Model trained in %e s." % elapsedTime)

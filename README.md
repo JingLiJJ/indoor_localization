@@ -1,7 +1,7 @@
 This is a repository for research on indoor localization based on wireless fingerprinting techniques. For more details, please visit [XJTLU SURF project home page](http://kyeongsoo.github.io/research/projects/indoor_localization/index.html).
 
 
-# 2017-08-18
+# 2017-9
 
 -   Implement [a multi-label classifier](./python/bf_multi-label_classification.py) to address the issues described on 2017-08-17: 3 building and 5 floor identifiers are [one-hot](https://en.wikipedia.org/wiki/One-hot) encoded into an 8-dimensional vector (e.g., '001|01000') and classified with different class weights (e.g., 30 for buidlings and 1 for floors); the resulting one-hot-encoded vector is split into 3-dimensional building and 5-dimensional floor vectors and the index of a maximum value of each vector is returned as a classified class ([results](./results/bf_multi-label_classification_out_20170819-010852.org)).
     -   Still, need to optimize parameters a lot.

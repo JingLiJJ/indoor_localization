@@ -21,6 +21,7 @@ import argparse
 import datetime
 import os
 import math
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import sys
@@ -59,7 +60,7 @@ path_train = '../data/UJIIndoorLoc/trainingData2.csv'           # '-110' for the
 #------------------------------------------------------------------------
 # output files
 #------------------------------------------------------------------------
-path_base = '../results/' + os.path.splitext(os.path.basename(__file__))[0]
+path_base = '../result/' + os.path.splitext(os.path.basename(__file__))[0]
 path_out =  path_base + '_out'
 path_sae_model = path_base + '_sae_model.hdf5'
 
@@ -108,7 +109,7 @@ if __name__ == "__main__":
         "--classifier_hidden_layers",
         help=
         "comma-separated numbers of units in classifier hidden layers; default is '128,256,512'",
-        default='128,256,512',
+        default='128,256',
         type=str)
     parser.add_argument(
         "-D",
@@ -176,7 +177,7 @@ if __name__ == "__main__":
     y_train = train_labels[train_mask]
     x_tmp = train_AP_features[~train_mask]
     y_tmp = train_labels[~train_mask]
-    val_mask = np.random.rand(len(y_tmp)) < training_validation_test_ratio[1] / sum(training_validation_test_ratio[1:]) # mask index array
+    val_mask = np.random.rand(len(y_tmp)) < training_validation_test_ratio[1] #/ sum(training_validation_test_ratio[1:]) # mask index array
     x_val = x_tmp[val_mask]
     y_val = y_tmp[val_mask]
     test_AP_features = x_tmp[~val_mask]
@@ -197,7 +198,7 @@ if __name__ == "__main__":
         model.compile(optimizer=SAE_OPTIMIZER, loss=SAE_LOSS)
 
         # train the model
-        model.fit(x_train, x_train, batch_size=batch_size, epochs=epochs, verbose=VERBOSE)
+        model.fit(x_train, x_train,batch_size=batch_size, epochs=epochs, verbose=VERBOSE)
 
         # remove the decoder part
         num_to_remove = (len(sae_hidden_layers) + 1) // 2
@@ -207,7 +208,7 @@ if __name__ == "__main__":
         # # set all layers (i.e., SAE encoder) to non-trainable (weights will not be updated)
         # for layer in model.layers[:]:
         #     layer.trainable = False
-        
+
         # save the model for later use
         model.save(path_sae_model)
 
@@ -224,16 +225,20 @@ if __name__ == "__main__":
 
     # train the model
     startTime = timer()
-    model.fit(x_train, y_train, validation_data=(x_val, y_val), batch_size=batch_size, epochs=epochs, verbose=VERBOSE)
+    history=model.fit(x_train, y_train, validation_data=(x_val, y_val), batch_size=batch_size, epochs=epochs, verbose=VERBOSE)
+
+    # list all data in history
+    print(history.history.keys())
 
     elapsedTime = timer() - startTime
     print("Model trained in %e s." % elapsedTime)
-    
+
     ### evaluate the model
     print("\nPart 3: evaluating the model ...")
 
     # calculate the accuracy of building and floor estimation
-    loss, acc = model.evaluate(test_AP_features, test_labels)
+    loss,acc = model.evaluate(test_AP_features, test_labels)
+
     # preds = model.predict(test_AP_features, batch_size=batch_size)
     # n_preds = preds.shape[0]
     # blds_results = (np.equal(np.argmax(test_labels[:, :3], axis=1), np.argmax(preds[:, :3], axis=1))).astype(int)
@@ -243,7 +248,29 @@ if __name__ == "__main__":
     # acc_bf = (blds_results*flrs_results).mean()
     # rfps_results = (np.equal(np.argmax(test_labels[:, 8:118], axis=1), np.argmax(preds[:, 8:118], axis=1))).astype(int)
     # acc_rfp = rfps_results.mean()
-    # acc = (blds_results*flrs_results*rfps_results).mean()
+    # acc = (blds_results*flrs_results*rfps_results).mean(
+
+    # plot accuracy amd loss
+    fig = plt.figure()
+    ax1 = fig.add_subplot(211)
+    ax2 = fig.add_subplot(212)
+
+    ax1.plot(history.history['acc'])
+    ax1.plot(history.history['val_acc'])
+
+    ax1.set_xlabel('epoch')
+    ax1.set_ylabel('accuracy')
+    ax1.legend(['train', 'validation'], loc='lower right')
+
+    ax2.plot(history.history['loss'])
+    ax2.plot(history.history['val_loss'])
+
+    ax2.set_xlabel('epoch')
+    ax2.set_ylabel('loss')
+    ax2.legend(['train', 'validation'], loc='upper right')
+
+    plt.tight_layout()
+    plt.show()
 
     ### print out final results
     now = datetime.datetime.now()
@@ -280,9 +307,9 @@ if __name__ == "__main__":
     f.write("  - Classifier dropout rate: %.2f\n" % dropout)
     f.write("* Performance\n")
     f.write("  - Loss = %e\n" % loss)
-    # f.write("  - Accuracy (building): %e\n" % acc_bld)
-    # f.write("  - Accuracy (floor): %e\n" % acc_flr)
-    # f.write("  - Accuracy (building-floor): %e\n" % acc_bf)
-    # f.write("  - Accuracy (location): %e\n" % acc_rfp)
+    # # f.write("  - Accuracy (building): %e\n" % acc_bld)
+    # # f.write("  - Accuracy (floor): %e\n" % acc_flr)
+    # # f.write("  - Accuracy (building-floor): %e\n" % acc_bf)
+    # # f.write("  - Accuracy (location): %e\n" % acc_rfp)
     f.write("  - Accuracy (overall): %e\n" % acc)
     f.close()
