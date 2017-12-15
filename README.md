@@ -17,12 +17,14 @@ The core of this method is classification DNN with stacked autoencoders.
 
 ### Stacked Antoencoders (SAE)
 The objective of this part is to reduce feature dimensionality and take advantage of a large amount of gathered data. The basic structure of SAE is presented below. 
+
 ![](shot/autoencoder.png)
 
 The input of SAE are received signal strengths (RSS) for APs. The output of decoder are the reconstructed RSSs of inputs from reduced representation. In the middle, there are several symmetrical hidden layers (HL) in the encoder and decoder parts dividedly. The SAE is learned during unsupervised training and the goal is to train the pair encoder-decoder to achieve the same information at the output as input. For example, here we enter 520 RSS inputs and create 520 feature layers, the network could generate smaller layers, such as 64 layers, these layers have enough information to reconstruct 520 input data. It makes use of information redundancy to compress data sets.
 
 ### Deep Neural Network (DNN) classifier with SAE
 After finishing the unsupervised learning of weights of SAE, the decoder part is disconnected and the already pre-trained encoder part is connected to DNN classifier. The architecture is shown below. 
+
 ![](shot/DNN.PNG)
 
 The inputs are the same as previous SAE, but the outputs are estimated location label, building, floor and location (B-F-L). The classifier part consists of several hidden layers, it depends on the complexity of the problem. Dropout is employed among the layers, which drops connections randomly between layers during training to force the network to learn redundant representation, achieve better generalization and avoid overfitting.
@@ -31,30 +33,36 @@ Before the supervised learning, the labeled data is divided into three parts, th
 ## Experimental results and discussion
 ### Original final performance
 The important parameters of the original code is presented in the table. 
+
 ![](shot/original.PNG)
 
 We emply UJIIdoolrLoc datasets. We divide the training datasets into training, validation and testing parts, the ratio of them is 7:2:1. Each database contains 529 attributes including 520 RSSs for Aps, floor number, building ID, space ID, relative position and other information. Here, epochs is 20 and batch_size is 10. Epochs means the number of training the whole data sets. batch_size represents the number of samples per gradient update. These two parameters would influence the final performance a lot. The accuracy and loss of training data and validation data are presented below. The final result using testing data obtains 1.25 loss and about 60% accuracy.
+
 ![](shot/2010.PNG)
 
 ## Modification
 After getting the original final accuracy and loss, we started to change the parameters. Although it is an individual coursework, we studied together. Because sometimes running program once requires lots of time. We can save much time if everyone run he program without duplicate parameters. 
 
 At first, we change the number of network layers in SAE. The reuslts of accuray is presented in the table.
+
 ![](shot/SAElayer.PNG)
 
 Comparing the results, we find that fewer layers can obtain the less loss and higher accuracy. However, it is meaningless modification to improve the performance. Because, the idea of SAE is to use less information to include the whole original information. Considering the performance and compression, we decide to use the original hidden layers.
 
-Then, we change the value of epoch from 20 to 30, 40, 50. The final performance are shown. 
+Then, we change the value of epoch from 20 to 30, 40, 50. The final performance are shown.
+
 ![](shot/epoch.PNG)
 
 Comparing the results, loss is decreasing and accuracy is increasing as the number of epoch become larger. The reason is that in a certain range, with the larger number of training, the weights in network keep on being updated. Then, weights would be fitter for this training datasets. However, it may occur overfitting phenomenon, which means that network is too fit for training datasets and can not obtain inferior performance on testing data.
 
 Therefore, we set epoch to 200, a larger number, and change the batch size to 200, 300, 400 and 500. The results are presented below. 
+
 ![](shot/batchsize.PNG)
 
 When changing batch size from 200 to 300, the loss become smaller and accuracy is improved. However, from 300 to 500, the accuracy is decreasing. Therefore, we assume that when epoch equals to 200 and batch size equals to 300 can produce best performance. 
 
 However, because of testing order conflict, we test different CLASSIFIER_ACTIVATION attributes with epoch 200 and batch size 200, not 300. You can see the whole results below.
+
 ![](shot/classifier.PNG)
 
 There are some random variables on the code so the results are floating, but near a value. The original method uses relu with 73% accuray. Comparing the whole table, elu, selu, relu can obtain the best performance. 
