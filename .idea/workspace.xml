@@ -2,15 +2,129 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ac1f2e8-b1d1-4107-9559-1a278fc56308" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/indoor_localization.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python/test.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/result/20_10.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/result/20_10_2.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_classification_out_20170817-180746.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_classification_out_20170817-183334.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_classification_out_20170817-195946.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_classification_out_20170817-200502.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_classification_out_20170817-200913.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_classification_out_20170817-201347.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_classification_out_20170817-202326.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_classification_out_20170817-204900.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_classification_out_20170818-081729.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_classification_out_20170818-083115.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170818-211233.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170818-211734.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170818-212701.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170818-213420.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170818-214033.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170818-214924.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170818-215155.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170818-215332.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170818-215750.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170819-002622.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170819-003356.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170819-004736.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170819-005218.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170819-005355.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170819-010852.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170819-012622.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170819-013205.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170819-013734.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170819-014019.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170819-014402.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170819-014752.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170819-095859.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170819-100459.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170819-101125.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170819-101709.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170913-202946.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170913-203721.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20170913-230304.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171001-203818.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171001-204133.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171001-204955.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-110705.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-111134.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-115115.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-115737.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-120412.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-121119.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-123304.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-123705.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-141544.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-142555.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-151649.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-172023.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-172625.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-201944.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-203646.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-204530.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-204936.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bf_multi-label_classification_out_20171002-205214.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bfl_multi-class_classification_out_20171212-180607.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bfl_multi-class_classification_out_20171212-200828.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bfl_multi-class_classification_out_20171212-215135.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bfl_multi-class_classification_out_20171212-221703.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bfl_multi-class_classification_out_20171213-003953.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bfl_multi-class_classification_out_20171213-011231.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bfl_multi-class_classification_out_20171213-143825.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bfl_multi-class_classification_out_20171213-144856.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bfl_multi-class_classification_out_20171213-145751.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bfl_multi-class_classification_out_20171213-151925.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/bfl_multi-class_classification_sae_model.hdf5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/building_classification_deep_learning_out_20170820-142956.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/building_classification_deep_learning_out_20170820-143456.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/building_classification_deep_learning_out_20170820-143839.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/building_classification_deep_learning_out_20170820-144625.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/building_classification_deep_learning_out_20170820-145447.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/building_classification_deep_learning_out_20170820-145842.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/building_classification_deep_learning_out_20170820-151158.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/building_classification_deep_learning_out_20170820-152114.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/building_classification_deep_learning_out_20170820-152615.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/building_classification_deep_learning_out_20170820-153114.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/building_classification_deep_learning_out_20170820-153651.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/building_classification_deep_learning_out_20170820-223518.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/building_classification_deep_learning_out_20170822-000729.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/building_classification_deep_learning_out_20170822-001225.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/floor_localization_out_20171006-195647.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization-1_20170812.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization-1_20170813-171604.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization-2_20170813-172016.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization-2_20170813.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_20170813-220320.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_20170813-224539.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_20170813-233817.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170814-133037.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170814-134012.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170814-134953.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170814-141942.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170814-141948.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170814-142041.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170814-154830.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170814-154924.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170814-155040.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170814-155630.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170814-160457.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170814-183025.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170814-184009.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170815-123606.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170815-124758.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170815-125550.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170815-125635.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170815-190315.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170815-190828.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170815-201429.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170815-202656.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170815-203448.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170815-203808.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/indoor_localization_deep_learning_out_20170815-204135.org" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.org" afterPath="$PROJECT_DIR$/README.org" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/bfl_multi-class_classification.py" afterPath="$PROJECT_DIR$/python/bfl_multi-class_classification.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/floor_localization.py" afterPath="$PROJECT_DIR$/python/floor_localization.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +138,8 @@
       <file leaf-file-name="bfl_multi-class_classification.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python/bfl_multi-class_classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="108" column="37" lean-forward="true" selection-start-line="108" selection-start-column="37" selection-end-line="108" selection-end-column="37" />
+            <state relative-caret-position="314">
+              <caret line="315" column="0" lean-forward="true" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
               <folding>
                 <element signature="e#723#738#0" expanded="true" />
               </folding>
@@ -217,11 +331,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="20" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/python/bfl_multi-class_classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#723#738#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python/bfl_multi-class_classification.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -308,7 +432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="52" column="38" lean-forward="false" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -316,7 +439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-684">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -324,14 +446,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="51" column="43" lean-forward="false" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/bfl_multi-class_classification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="108" column="37" lean-forward="true" selection-start-line="108" selection-start-column="37" selection-end-line="108" selection-end-column="37" />
+        <state relative-caret-position="314">
+          <caret line="315" column="0" lean-forward="true" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
           <folding>
             <element signature="e#723#738#0" expanded="true" />
           </folding>

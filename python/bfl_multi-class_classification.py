@@ -83,13 +83,13 @@ if __name__ == "__main__":
         "-E",
         "--epochs",
         help="number of epochs; default is 20",
-        default=20,
+        default=200,
         type=int)
     parser.add_argument(
         "-B",
         "--batch_size",
         help="batch size; default is 10",
-        default=10,
+        default=300,
         type=int)
     parser.add_argument(
         "-T",
@@ -109,7 +109,7 @@ if __name__ == "__main__":
         "--classifier_hidden_layers",
         help=
         "comma-separated numbers of units in classifier hidden layers; default is '128,256,512'",
-        default='128,256',
+        default='128,256,512',
         type=str)
     parser.add_argument(
         "-D",
