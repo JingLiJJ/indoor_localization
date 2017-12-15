@@ -6,7 +6,7 @@ Location awareness is one of popular technologies in our lives. It plays an impo
 ### Wi-Fi fingerprinting
 Nowadays, Wi-Fi networks exist everywhere in public buildings, schools, shopping malls. Almost every mobile robot is equipped with a Wi-Fi adapter used to connect with the Internet. Wi-Fi adapter can obtain the observed service set identifier (SSID) and received signal strengths (RSS) for access points (APs). Wi-Fi fingerprinting is defined as a vector of a pair of a SSID and an RSS for an AP measured at a location. Then a position can be estimated by finding the closet match between RSS and the fingerprints of known locations in a database. The procedure of indoor localization using Wi-Fi printing is shown below.
 
-![error figure](shot/procedure.png)
+![error figure](shot/procedure.PNG)
 
 ## Project Objective
 
